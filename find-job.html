@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Hunter | Home</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- fontawsome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-primary pt-5 pb-6 rounded-b-[18px]">
+      <div class="flex flex-row max-w-6xl mx-auto">
+        <!-- navbar left -->
+        <div class="flex items-center basis-7/12 justify-between relative z-[100] text-base font-semibold gap-7 text-white font-red-hat-display">
+          <a href="index.html" class="flex gap-2">
+            <img src="/assets/images/icons/logo.svg" alt="" class="" />
+            <p class="text-2xl">JobHunters</p>
+          </a>
+          <ul class="flex gap-7">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="find-job.html" class="">Find Jobs</a></li>
+            <li><a href="" class="">CV Builder</a></li>
+            <li><a href="" class="">About</a></li>
+            <li><a href="" class="">Post A Job</a></li>
+          </ul>
+        </div>
+        <!-- navbar right -->
+        <div class="basis-5/12 flex text-lg font-semibold font-red-hat-display justify-end items-center gap-9">
+          <a href="" class="text-white">Sign In</a>
+          <a href="" class="bg-white text-primary py-3 px-5 rounded-md">Register</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Header -->
+    <header class="bg-primary-soft pt-16 pb-20">
+      <div class="w-[987px] mx-auto">
+        <div class="text-center">
+          <h1 class="font-extrabold leading-normal font-red-hat-display text-black text-[52px]">Find your dream job</h1>
+          <p class="font-red-hat-display text-[#5C554B] font-normal text-lg leading-9">Find your next career at companies like Google, Nike, and Amazon</p>
+        </div>
+        <div class="mt-16 bg-white flex items-center flex-row p-6 gap-5">
+          <!-- Job Search -->
+          <div class="w-full flex flex-row items-center gap-4">
+            <img src="/assets/images/icons/search.svg" alt="" class="w-6" />
+            <input type="text" class="text-[#515B6F] outline-none focus:border-none py-2 pr-4 text-base font-poppins placeholder:text-[#515B6F] w-full" placeholder="Job title or keyword" />
+          </div>
+          <div class="w-[1px] h-10 bg-[#313131]"></div>
+          <!-- Location Search -->
+          <div class="w-full flex flex-row items-center gap-4">
+            <img src="/assets/images/icons/hero-location-icon.svg" alt="" class="w-6" />
+            <!-- <input type="text" /> -->
+            <select class="text-[#313131] bg-white outline-none focus:border-none py-2 pr-6 text-base font-poppins placeholder:text-[#AFAFBB] w-full" placeholder="Job title or keyword" name="" id="">
+              <option value="" class="">Florence, Italy</option>
+            </select>
+          </div>
+          <button class="bg-primary px-6 text-base font-poppins font-medium text-white py-4 rounded-lg uppercase">Search</button>
+        </div>
+        <p class="pt-4 text-[#515B6F] text-base font-normal leading-6">Popular : UI Designer, UX Researcher, Android, Admin</p>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Job -->
+    <section class="mt-12 gap-10 flex flex-row max-w-6xl mx-auto">
+      <!-- Job Sidebar -->
+      <aside class="w-4/12">
+        <!-- filter 1 -->
+        <div class="flex flex-col gap-5">
+          <div class="flex cursor-pointer flex-row items-center justify-between">
+            <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Salary Range</h4>
+            <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$700 - $1000 (4)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$100 - $1500 (6)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$1500 - $2000 (10)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$3000 or above (4)</p>
+          </div>
+        </div>
+        <!-- filter 4 -->
+        <div class="flex mt-9 flex-col gap-5">
+          <div class="flex flex-row cursor-pointer items-center justify-between">
+            <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Categories</h4>
+            <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Design (24)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Business (13)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Marketing (3)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Sales (3)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Human Resource (6)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Finance (4)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Technology (14)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Engineering (4)</p>
+          </div>
+        </div>
+
+        <!-- filter 3 -->
+        <div class="flex mt-9 flex-col gap-5">
+          <div class="flex flex-row cursor-pointer items-center justify-between">
+            <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Type of Employment</h4>
+            <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Full-time (3)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Part-Time (5)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Remote (2)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Contract (3)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Internship (24)</p>
+          </div>
+        </div>
+        <!-- filter 4 -->
+        <div class="flex mt-9 flex-col gap-5">
+          <div class="flex cursor-pointer flex-row items-center justify-between">
+            <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Job Level</h4>
+            <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Entry Level (57)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Mid Level (3)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Senior Level (5)</p>
+          </div>
+          <div class="flex flex-row gap-4">
+            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Entry Level (57)</p>
+          </div>
+        </div>
+      </aside>
+      <!-- Job Content -->
+      <div class="w-8/12">
+        <!-- Top -->
+        <div class="flex flex-row justify-between">
+          <!-- top left -->
+          <div class="font-red-hat-display">
+            <h3 class="text-[#25324B] text-[32px] font-extrabold leading-9">All Available Jobs</h3>
+            <p class="text-[#7C8493] font-normal leading-6 text-base mt-1">Showing 44 results</p>
+          </div>
+          <!-- top right -->
+          <div class="flex flex-row gap-5 items-center">
+            <div class="flex flex-row gap-3 font-red-hat-display items-center">
+              <p class="text-[#7C8493] font-normal leading-6 text-base mt-1">Sort by:</p>
+              <select name="" id="" class="bg-white outline-none font-bold text-[#25324B] text-base pr-2">
+                <option value="" class="bg-white pr-2">Most relevant</option>
+              </select>
+            </div>
+            <div class="w-[1px] h-8 bg-[#202430]"></div>
+            <div class="">
+              <i class="fa-solid fa-border-all text-[#989898] active:bg-primary-soft cursor-pointer w-10 h-10 p-3 rounded-md"></i>
+              <i class="fa-solid fa-list active:bg-primary-soft bg-primary-soft cursor-pointer text-primary w-10 h-10 p-3 rounded-md"></i>
+            </div>
+          </div>
+        </div>
+        <!-- post Container -->
+        <div class="flex flex-col gap-6 mt-8">
+          <!-- Card 1 -->
+          <div class="border border-[#ECECEC] py-8 px-6 rounded-md">
+            <div class="flex flex-row gap-6 items-center">
+              <img src="/assets/images/icons/marketing-offer-icon.svg" alt="" class="p-3 bg-[#F6F9FC] rounded-lg" />
+              <div class="">
+                <h3 class="text-[#313131] font-extrabold font-red-hat-display text-[22px]">Marketing Officer</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+    <!-- Testimonial -->
+    <section class=""></section>
+    <!-- End Testimonial -->
+    <!-- Explore -->
+    <section class=""></section>
+    <!-- End Explore -->
+    <!-- Footer -->
+    <footer class=""></footer>
+    <!-- End Footer -->
+  </body>
+</html>
