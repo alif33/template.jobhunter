@@ -68,115 +68,123 @@
       <aside class="w-4/12">
         <!-- filter 1 -->
         <div class="flex flex-col gap-5">
-          <div class="flex cursor-pointer flex-row items-center justify-between">
+          <div onclick="showSalaryFilter()" id="salaryRangeTitle" class="flex cursor-pointer flex-row items-center justify-between">
             <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Salary Range</h4>
             <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
           </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$700 - $1000 (4)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$100 - $1500 (6)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$1500 - $2000 (10)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$3000 or above (4)</p>
+          <div id="salaryFilter">
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$700 - $1000 (4)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$100 - $1500 (6)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$1500 - $2000 (10)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">$3000 or above (4)</p>
+            </div>
           </div>
         </div>
-        <!-- filter 4 -->
+        <!-- filter 2 -->
         <div class="flex mt-9 flex-col gap-5">
-          <div class="flex flex-row cursor-pointer items-center justify-between">
+          <div onclick="showCategoryFilter()" id="caregoryTitle" class="flex flex-row cursor-pointer items-center justify-between">
             <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Categories</h4>
             <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
           </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Design (24)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Business (13)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Marketing (3)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Sales (3)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Human Resource (6)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Finance (4)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Technology (14)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Engineering (4)</p>
+          <div id="categoryFilter">
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Design (24)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Business (13)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Marketing (3)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Sales (3)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Human Resource (6)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Finance (4)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Technology (14)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Engineering (4)</p>
+            </div>
           </div>
         </div>
 
         <!-- filter 3 -->
         <div class="flex mt-9 flex-col gap-5">
-          <div class="flex flex-row cursor-pointer items-center justify-between">
+          <div onclick="showTypeFilter()" class="flex flex-row cursor-pointer items-center justify-between">
             <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Type of Employment</h4>
             <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
           </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Full-time (3)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Part-Time (5)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Remote (2)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Contract (3)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Internship (24)</p>
+          <div id="typeFilter">
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Full-time (3)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Part-Time (5)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Remote (2)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Contract (3)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Internship (24)</p>
+            </div>
           </div>
         </div>
         <!-- filter 4 -->
         <div class="flex mt-9 flex-col gap-5">
-          <div class="flex cursor-pointer flex-row items-center justify-between">
+          <div onclick="showLavelFilter()" class="flex cursor-pointer flex-row items-center justify-between">
             <h4 class="text-base text-[#313131] font-red-hat-display font-bold leading-6">Job Level</h4>
             <img src="/assets/images/icons/top-arrow.svg" alt="" class="p-1" />
           </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Entry Level (57)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Mid Level (3)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Senior Level (5)</p>
-          </div>
-          <div class="flex flex-row gap-4">
-            <input checked type="checkbox" class="h-5 w-5" name="" id="" />
-            <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Entry Level (57)</p>
+          <div id="levelFilter">
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Entry Level (57)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Mid Level (3)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Senior Level (5)</p>
+            </div>
+            <div class="flex flex-row gap-4">
+              <input checked type="checkbox" class="h-5 w-5" name="" id="" />
+              <p class="font-red-hat-display font-normal text-[#515B6F] text-base leading-6">Entry Level (57)</p>
+            </div>
           </div>
         </div>
       </aside>
@@ -616,5 +624,8 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
